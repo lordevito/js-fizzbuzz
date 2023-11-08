@@ -11,12 +11,11 @@ const elemUl = document.querySelector(`ul.list`);
 
 for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numeroIniziale++) {
 
-    
+    const li = document.createElement(`li`);
 
     // Imposto if 
 
     if(numeroIniziale % 15 === 0) {
-        const li = document.createElement(`li`);
         console.log (`FizzBuzz`);
         li.append(`FizzBuzz`);
         elemUl.append(li);
@@ -25,7 +24,6 @@ for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numer
     // Imposto else if 
 
     else if (numeroIniziale % 3 === 0) {
-        const li = document.createElement(`li`);
         console.log (`Fizz`);
         li.append(`Fizz`);
         elemUl.append(li);
@@ -34,7 +32,6 @@ for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numer
     // Imposto else if 
 
     else if (numeroIniziale % 5 === 0) {
-        const li = document.createElement(`li`);
         console.log (`Buzz`);
         li.append(`Buzz`);
         elemUl.append(li);
@@ -44,7 +41,6 @@ for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numer
 
     else{
         console.log (numeroIniziale);
-        const li = document.createElement(`li`);
         li.append(numeroIniziale);
         elemUl.append(li);
     }
