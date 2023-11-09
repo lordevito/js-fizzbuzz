@@ -1,4 +1,4 @@
-`use strict`
+`use strict`;
 
 // Dichiaro variabili
 
@@ -6,10 +6,9 @@ let contatoreInizio = 0;
 let contatoreFine = 100;
 const elemUl = document.querySelector(`ul.list`);
 
-
 // Imposto Ciclo 
 
-for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numeroIniziale++) {
+for (let numeroIniziale = contatoreInizio; numeroIniziale <= contatoreFine; numeroIniziale++) {
 
     const li = document.createElement(`li`);
 
@@ -18,7 +17,6 @@ for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numer
     if(numeroIniziale % 15 === 0) {
         console.log (`FizzBuzz`);
         li.append(`FizzBuzz`);
-        elemUl.append(li);
     }
 
     // Imposto else if 
@@ -26,7 +24,6 @@ for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numer
     else if (numeroIniziale % 3 === 0) {
         console.log (`Fizz`);
         li.append(`Fizz`);
-        elemUl.append(li);
     }
 
     // Imposto else if 
@@ -34,17 +31,15 @@ for (let numeroIniziale = contatoreInizio; numeroIniziale < contatoreFine; numer
     else if (numeroIniziale % 5 === 0) {
         console.log (`Buzz`);
         li.append(`Buzz`);
-        elemUl.append(li);
     }
 
     // Imposto else 
 
     else{
         console.log (numeroIniziale);
-        li.append(numeroIniziale);
-        elemUl.append(li);
+        li.append(numeroIniziale);        
     }
 
-    
+    elemUl.append(li);
 
 }
